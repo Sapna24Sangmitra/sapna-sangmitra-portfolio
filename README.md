@@ -139,9 +139,7 @@ git push origin main
 
 ## 🌐 Live Demo
 
-Once GitHub Pages is configured, the portfolio will be available at: `https://sapna24sangmitra.github.io/sapna-sangmitra-portfolio/`
-
-*Note: Complete the GitHub Pages setup as described in the deployment section above.*
+The portfolio is available at: `https://sapna24sangmitra.github.io/sapna-sangmitra-portfolio/`
 
 ## 📄 License
 
