@@ -6,7 +6,7 @@
 // --- DATA ---
 const portfolioData = {
     name: "Sapna Sangmitra",
-    tagline: "Software Engineer | AI Enthusiast",
+    tagline: "Software Engineer | AI Engineer",
     catchphrase: "Engineering intelligent systems, from scalable backends to GenAI agents & MCPs.",
     bio: "Backend engineer turned AI builder. I design high-performance APIs, build GenAI agents, and create MCP-powered tools that ship fast and solve real problems.",
     email: "ssangmitra@gmail.com",
@@ -14,6 +14,7 @@ const portfolioData = {
         linkedin: "https://www.linkedin.com/in/sapna-sangmitra",
         github: "https://github.com/Sapna24Sangmitra",
     },
+    resume: "SapnaSangmitra_AIEngineer.pdf",
     experience: [
       {
         role: "App Foundation AI Engineer Intern",
@@ -79,17 +80,31 @@ const portfolioData = {
     ],
     projects: [
         {
-            name: "AWS Cloudathon - Winner",
-            description: "Built and deployed a cloud-native architecture using various AWS services, following the AWS Well-Architected Framework. Secured 1st place among competing teams.",
-            tags: ["AWS", "EC2", "Lambda", "RDS", "DynamoDB", "CloudFormation"],
-            link: "",
-            linkLabel: "",
+            name: "PresentBuddy",
+            description: "Voice-first AI co-host that transforms presentation prep and delivery. Create Mode for brainstorming and script generation, Present Mode for real-time AI co-presenting with intelligent slide control via VocalBridge and MCP.",
+            tags: ["VocalBridge", "WebRTC", "LiveKit", "MCP", "AI Agent", "Real-time"],
+            link: "https://www.youtube.com/watch?v=0wk6NGBF9XQ",
+            linkLabel: "Demo",
         },
         {
-            name: "Wavelly / PathSure",
-            description: "Smart safety navigation app using lighting, crime, and foot traffic data to recommend safer routes. Winner at SFHacks 2025 & Cybersecurity Hackathon. Implemented SSO, MFA, RBAC for secure access.",
-            tags: ["React", "Node.js", "Navigation", "SSO", "MFA", "Security"],
-            link: "https://github.com/Sapna24Sangmitra/SpartUpProject",
+            name: "API Snippet Generator",
+            description: "AI-powered documentation platform that analyzes GitHub repos, NPM packages, or API specs to auto-generate standardized code snippets with setup guides, authentication, and error handling.",
+            tags: ["React", "TypeScript", "Node.js", "GPT-4", "Claude", "Tailwind"],
+            link: "https://github.com/Sapna24Sangmitra/APIIntegrationSnippet",
+            linkLabel: "GitHub",
+        },
+        {
+            name: "COPeX",
+            description: "No-code platform for building & deploying React apps via LLM agents (GPT/LLaMA/Claude). Features dynamic code generation, iterative refinement, and natural language interfaces. Integrated Convex for real-time APIs.",
+            tags: ["React", "LLM Agents", "Convex", "BraveAI", "No-Code", "GPT"],
+            link: "https://www.youtube.com/watch?v=lHOCRf5ZWG0",
+            linkLabel: "Demo",
+        },
+        {
+            name: "YouTube Summary Video Generator",
+            description: "A Generative AI-based automation tool that summarizes YouTube videos using YouTubeTranscriptAPI, LLaMA3, and AWS Polly for voice synthesis.",
+            tags: ["Python", "Generative AI", "LLaMA3", "AWS Polly", "MoviePy"],
+            link: "https://github.com/Sapna24Sangmitra/YouTubeSummaryVideoGenerator",
             linkLabel: "GitHub",
         },
         {
@@ -100,10 +115,10 @@ const portfolioData = {
             linkLabel: "GitHub",
         },
         {
-            name: "YouTube Summary Video Generator",
-            description: "A Generative AI-based automation tool that summarizes YouTube videos using YouTubeTranscriptAPI, LLaMA3, and AWS Polly for voice synthesis.",
-            tags: ["Python", "Generative AI", "LLaMA3", "AWS Polly", "MoviePy"],
-            link: "https://github.com/Sapna24Sangmitra/YouTubeSummaryVideoGenerator",
+            name: "Wavelly / PathSure",
+            description: "Smart safety navigation app using lighting, crime, and foot traffic data to recommend safer routes. Winner at SFHacks 2025 & Cybersecurity Hackathon. Implemented SSO, MFA, RBAC for secure access.",
+            tags: ["React", "Node.js", "Navigation", "SSO", "MFA", "Security"],
+            link: "https://github.com/Sapna24Sangmitra/SpartUpProject",
             linkLabel: "GitHub",
         },
         {
@@ -125,11 +140,11 @@ const portfolioData = {
         },
         {
             event: "Buildathon 2025",
-            project: "Hackathon Project",
+            project: "5 AI Apps in 5 Hours",
             result: "2x Winner",
             date: "2025",
-            description: "Recognized for innovation at Buildathon 2025, demonstrating AI-driven solutions.",
-            tags: ["AI", "Innovation"],
+            description: "Speed challenge by AI Fund & DeepLearning.ai. Built 5 AI-driven apps in 5 hours. Won First Prize + Best Design, awarded by Andrew Ng.",
+            tags: ["AI Fund", "DeepLearning.ai", "Speed Build", "Andrew Ng"],
         },
         {
             event: "AWS Cloudathon",
@@ -144,23 +159,23 @@ const portfolioData = {
             project: "Wavelly / PathSure — Smart Safety Navigation App",
             result: "Winner",
             date: "2025",
-            description: "Navigation app using lighting, crime, and foot traffic data to recommend safer routes with emergency alerts. Implemented SSO, MFA, RBAC for secure access.",
-            tags: ["React", "Node.js", "Navigation", "SSO", "MFA", "Security"],
+            description: "Extended the navigation app with enterprise security features. Added SSO, MFA, and RBAC for secure access control, plus encrypted data transmission.",
+            tags: ["SSO", "MFA", "RBAC", "Security", "Authentication"],
         },
         {
             event: "SFHacks",
             project: "Wavelly / PathSure — Smart Safety Navigation App",
             result: "Winner",
             date: "2025",
-            description: "Navigation app using lighting, crime, and foot traffic data to recommend safer routes with emergency alerts. Implemented SSO, MFA, RBAC for secure access.",
-            tags: ["React", "Node.js", "Navigation", "SSO", "MFA", "Security"],
+            description: "Navigation app using lighting, crime, and foot traffic data to recommend safer routes with emergency alerts. Built the core routing algorithm and real-time data integration.",
+            tags: ["React", "Node.js", "Navigation", "Real-time", "Maps API"],
         },
         {
             event: "Cerebral Valley Hackathon",
             project: "COPEX — React Component Generator & Deployer",
             result: "Finalist",
             date: "2024",
-            description: "Developed COPeX, a no-code platform for building and deploying React apps using LLM agents (GPT/LLaMA/Claude) with dynamic code generation, iterative refinement, and error handling through natural language interfaces.",
+            description: "No-code platform for building & deploying React apps via LLM agents (GPT/LLaMA/Claude). Features dynamic code generation and natural language interfaces.",
             tags: ["React", "LLM Agents", "Convex", "BraveAI", "No-Code"],
         },
     ],
@@ -168,27 +183,44 @@ const portfolioData = {
         {
             category: "GenAI & Agents",
             icon: "brain",
-            list: ["AI Agents", "MCP Servers", "RAG Pipelines", "Prompt Engineering", "LangChain", "LangGraph", "Claude Code", "Cline", "AI App Dev", "Vector DB"],
+            list: ["AI Agents", "MCP Servers", "RAG Pipelines", "Prompt Engineering", "LangChain", "LangGraph", "Claude Code", "Cline", "AI App Dev", "Vector DB", "Anthropic API", "OpenAI API"],
         },
         {
             category: "Languages & Frontend",
             icon: "code",
-            list: ["Java", "Python", "JavaScript", "TypeScript", "C++", "React", "YAML", "JSON"],
+            list: ["Java", "Python", "JavaScript", "TypeScript", "C++", "React", "Vite", "Tailwind CSS", "YAML", "JSON"],
         },
         {
             category: "Backend & Infra",
             icon: "server",
-            list: ["Spring Boot", "REST API", "Spring Reactive", "NodeJS", "MySQL", "Kafka", "NoSQL", "Docker", "AWS"],
+            list: ["Spring Boot", "REST API", "Spring Reactive", "NodeJS", "MySQL", "Kafka", "NoSQL", "Docker", "AWS", "Playwright", "WebRTC", "LiveKit"],
         },
         {
             category: "ML & Data",
             icon: "chart",
-            list: ["PyTorch", "NLP", "Computer Vision", "Pandas", "NumPy", "Search"],
+            list: ["PyTorch", "NLP", "Computer Vision", "OpenCV", "YOLOv8", "Pandas", "NumPy", "Search"],
         },
         {
             category: "Dev Tools",
             icon: "tool",
             list: ["Git", "GitHub", "JIRA", "Postman", "Swagger", "Confluence"],
+        },
+    ],
+    education: [
+        {
+            school: "San Jose State University",
+            location: "California, USA",
+            degree: "Master of Science in Engineering",
+            period: "Jan 2024 - Dec 2025",
+            gpa: "3.8",
+        },
+        {
+            school: "Galgotias University",
+            location: "Greater Noida, India",
+            degree: "Bachelor of Technology in Computer Science & Engineering",
+            period: "June 2015 - May 2019",
+            gpa: "8.03",
+            isCgpa: true,
         },
     ],
 };
@@ -204,6 +236,8 @@ const ICONS = {
     trophy: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 010-5H6m12 5h1.5a2.5 2.5 0 000-5H18M9 21h6m-3-4v4m-5-8a5 5 0 0010 0V4H7v9z"/></svg>`,
     layers: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`,
     externalLink: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`,
+    resume: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>`,
+    education: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`,
 };
 
 // --- UI BUILDER FUNCTIONS ---
@@ -307,6 +341,7 @@ function createBottomNav() {
         { href: '#experience', icon: ICONS.briefcase, label: 'Experience' },
         { href: '#projects', icon: ICONS.code, label: 'Projects' },
         { href: '#hackathons', icon: ICONS.trophy, label: 'Hackathons' },
+        { href: '#education', icon: ICONS.education, label: 'Education' },
         { href: '#skills', icon: ICONS.layers, label: 'Skills' },
     ];
 
@@ -534,7 +569,7 @@ function createHackathonsSection() {
 
     return h('section', { id: 'hackathons', className: 'section' }, [
         h('h2', { className: 'section-title' }, ['Hackathon Wins']),
-        h('p', { className: 'section-subtitle' }, ['6x Hackathon Winner — recognized for innovation across AI & cloud competitions.']),
+        h('p', { className: 'section-subtitle' }, ['5x Hackathon Winner — recognized for innovation across AI competitions.']),
         h('div', { className: 'hack-scroll-wrapper' }, [
             h('div', { className: 'hack-timeline' }, timelineItems)
         ])
@@ -549,6 +584,28 @@ const SKILL_ICONS: Record<string, string> = {
     chart: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>`,
     tool: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>`,
 };
+
+// --- EDUCATION SECTION ---
+function createEducationSection() {
+    const educationCards = portfolioData.education.map(edu =>
+        h('div', { className: 'edu-card' }, [
+            h('div', { className: 'edu-card__header' }, [
+                h('h3', { className: 'edu-card__school' }, [edu.school]),
+                h('span', { className: 'edu-card__location' }, [edu.location]),
+            ]),
+            h('p', { className: 'edu-card__degree' }, [edu.degree]),
+            h('div', { className: 'edu-card__meta' }, [
+                h('span', { className: 'edu-card__period' }, [edu.period]),
+                h('span', { className: 'edu-card__gpa' }, [`${(edu as any).isCgpa ? 'CGPA' : 'GPA'}: ${edu.gpa}`]),
+            ]),
+        ])
+    );
+
+    return h('section', { id: 'education', className: 'section' }, [
+        h('h2', { className: 'section-title' }, ['Education']),
+        h('div', { className: 'edu-grid' }, educationCards)
+    ]);
+}
 
 function createSkillsSection() {
     const skillCategories = portfolioData.skills.map((category, catIdx) => {
@@ -712,6 +769,7 @@ function renderApp() {
     root.appendChild(createExperienceSection());
     root.appendChild(createProjectsSection());
     root.appendChild(createHackathonsSection());
+    root.appendChild(createEducationSection());
     root.appendChild(createSkillsSection());
     root.appendChild(createFooter());
 

@@ -1105,7 +1105,7 @@ body {
     z-index: 1;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
 }
 
@@ -1123,6 +1123,108 @@ body {
     padding: 0.15rem 0.5rem;
     border-radius: 4px;
     font-size: 0.7rem;
+    font-weight: 500;
+}
+
+/* ============================================
+   EDUCATION
+   ============================================ */
+.edu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.edu-card {
+    background: linear-gradient(160deg, rgba(139, 92, 246, 0.04), rgba(10, 10, 16, 0.85), rgba(236, 72, 153, 0.03));
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: all var(--transition-medium);
+    position: relative;
+    overflow: hidden;
+}
+
+.edu-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: var(--accent-gradient);
+    opacity: 0.2;
+    transition: opacity var(--transition-medium);
+}
+
+.edu-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--accent-gradient-subtle);
+    opacity: 0;
+    transition: opacity var(--transition-medium);
+    pointer-events: none;
+}
+
+.edu-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-glow), 0 0 60px rgba(168, 85, 247, 0.04);
+    transform: translateY(-3px);
+}
+
+.edu-card:hover::before {
+    opacity: 1;
+}
+
+.edu-card:hover::after {
+    opacity: 1;
+}
+
+.edu-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.edu-card__school {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.edu-card__location {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.edu-card__degree {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 0.5rem 0;
+}
+
+.edu-card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.edu-card__period {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.edu-card__gpa {
+    font-size: 0.8rem;
+    color: var(--accent-purple);
     font-weight: 500;
 }
 
@@ -1314,6 +1416,10 @@ body {
 
     .skill-category--featured {
         grid-column: span 1;
+    }
+
+    .edu-grid {
+        grid-template-columns: 1fr;
     }
 
     .exp-grid {
