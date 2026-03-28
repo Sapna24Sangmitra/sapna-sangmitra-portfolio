@@ -806,7 +806,7 @@ function setupScrollAnimations() {
 
 function setupSmoothScrolling() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e: MouseEvent) {
+        anchor.addEventListener('click', function (e: Event) {
             e.preventDefault();
             const target = e.currentTarget as HTMLAnchorElement;
             const href = target.getAttribute('href');
