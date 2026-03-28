@@ -18,13 +18,13 @@ const portfolioData = {
     experience: [
       {
         role: "App Foundation AI Engineer Intern",
-        company: "SAP Ariba",
+        company: "SAP",
         period: "Nov 2025 - Present",
         muted: false,
         description: [
-          "Engineered autonomous exception-handling pipeline using MCP servers, enabling AI agents to transform Splunk alerts into actionable Jira tickets.",
-          "Developed multi-agent AI automation system leveraging Playwright + Anthropic Computer Use, reducing manual intervention by 80%+.",
-          "Architected RAG-powered semantic search engine with vector embeddings for enterprise procurement data.",
+          "Built autonomous MCP server pipeline enabling AI agents (Claude, Cline, Copilot) to auto-convert Splunk alerts into Jira tickets, eliminating manual triage.",
+          "Developed multi-agent automation with Playwright + Computer Use to orchestrate procurement workflows, reducing manual intervention by 80%+.",
+          "Architected RAG-powered semantic search with vector embeddings, enabling LLM agents to extract insights at scale.",
         ],
       },
       {
@@ -65,7 +65,7 @@ const portfolioData = {
         muted: true,
         description: [
           "Developing an interactive web application using React to teach foundational AI concepts to middle and high school students.",
-          "Project sponsored by Lockheed Martin, Juniper Networks, KLA+, and Ford.",
+          "Built personalized chatbots to support student learning & engagement, sponsored by Lockheed Martin, Juniper Networks, KLA+, & Ford.",
         ],
       },
       {
@@ -74,7 +74,7 @@ const portfolioData = {
         period: "Sept 2024 - May 2025",
         muted: true,
         description: [
-          "Served as an Instructional Student Assistant at SJSU, supporting coursework and student learning.",
+          "Served as an Instructional Student Assistant at SJSU for a Python programming course covering NumPy and Pandas, supporting coursework and student learning.",
         ],
       },
     ],
@@ -362,11 +362,11 @@ function createBottomNav() {
     contactBtn.appendChild(h('span', { className: 'bottom-nav__contact-icon', innerHTML: contactIcon }, []));
 
     const popup = h('div', { className: 'contact-popup' }, [
-        h('a', { href: portfolioData.socials.linkedin, className: 'contact-popup__item', target: '_blank' }, [
+        h('a', { href: portfolioData.socials.linkedin, className: 'contact-popup__item', target: '_blank', rel: 'noopener noreferrer' }, [
             h('span', { className: 'contact-popup__icon', innerHTML: ICONS.linkedin }, []),
             h('span', {}, ['LinkedIn']),
         ]),
-        h('a', { href: portfolioData.socials.github, className: 'contact-popup__item', target: '_blank' }, [
+        h('a', { href: portfolioData.socials.github, className: 'contact-popup__item', target: '_blank', rel: 'noopener noreferrer' }, [
             h('span', { className: 'contact-popup__icon', innerHTML: ICONS.github }, []),
             h('span', {}, ['GitHub']),
         ]),
@@ -424,11 +424,11 @@ function createHeroSection() {
             h('p', { className: 'hero__catchphrase' }, [portfolioData.catchphrase]),
             h('p', { className: 'hero__bio' }, [portfolioData.bio]),
             h('div', { className: 'hero__socials' }, [
-                h('a', { href: portfolioData.socials.linkedin, className: 'social__link', target: '_blank', 'aria-label': 'LinkedIn' }, [
+                h('a', { href: portfolioData.socials.linkedin, className: 'social__link', target: '_blank', rel: 'noopener noreferrer', 'aria-label': 'LinkedIn' }, [
                     h('span', { innerHTML: ICONS.linkedin }, []),
                     h('span', {}, ['LinkedIn'])
                 ]),
-                h('a', { href: portfolioData.socials.github, className: 'social__link', target: '_blank', 'aria-label': 'GitHub' }, [
+                h('a', { href: portfolioData.socials.github, className: 'social__link', target: '_blank', rel: 'noopener noreferrer', 'aria-label': 'GitHub' }, [
                     h('span', { innerHTML: ICONS.github }, []),
                     h('span', {}, ['GitHub'])
                 ]),
@@ -523,6 +523,7 @@ function createProjectsSection() {
                 href: project.link,
                 className: 'project-link-capsule',
                 target: '_blank',
+                rel: 'noopener noreferrer',
                 'aria-label': `View ${project.name} on ${project.linkLabel}`,
             }, [
                 h('span', { className: 'project-link-icon', innerHTML: ICONS.externalLink }, []),
